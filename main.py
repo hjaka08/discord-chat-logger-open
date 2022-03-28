@@ -20,7 +20,7 @@ bot = commands.Bot(
 token = "discord bot or user token here"
 #지금까지 기타 설정들
 @bot.event
-async def on_ok():
+async def on_ready():
     print("디스코드와 연결되었습니다. 모든 메시지가 기록됩니다.")
     telbot.sendMessage(chat_id=chat_id, text=f"디스코드와 연결되었습니다. 모든 메시지가 기록됩니다.") # 연결되었다는 알림 보내기
 
